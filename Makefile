@@ -22,3 +22,6 @@ uninstall:
 
 clean:
 	rm -rf crypto.so
+
+test:
+	prove -fe arc t
