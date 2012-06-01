@@ -1,6 +1,6 @@
 (require "ffi.arc")
 
-(w/ffi (string arclib* "/site/crypto") ; TODO: fix library path
+(w/ffi "crypto"
   (cdef cmd5    "arc_MD5"    cstring (cstring cptr))
   (cdef csha512 "arc_SHA512" cstring (cstring cptr)))
 
